@@ -27,6 +27,7 @@ var animate = function() {
 animate();
 */
 
+
 // Necessary for camera/plane rotation
 var degree = Math.PI/180;
 
@@ -64,7 +65,7 @@ plane.receiveShadow = true;
 var loader = new THREE.STLLoader();
 loader.load( './gear.STL', function ( geometry ) {
 
-    var material = new THREE.MeshStandardMaterial( { color: 0x999999, roughness: 0.1, metalness: 1 });//MeshLambertMaterial({ color: 0x7f7f7f});//{ color: 0xFFFFFF, specular: 0x111111, shininess: 200 } );
+    var material = new THREE.MeshStandardMaterial( { color: 0x888888, roughness: 0.1, metalness: 1 });//MeshLambertMaterial({ color: 0x7f7f7f});//{ color: 0xFFFFFF, specular: 0x111111, shininess: 200 } );
     var mesh = new THREE.Mesh( geometry, material );
     mesh.position.set( 0, 0, 0);
     scene.add( mesh );
